@@ -1,4 +1,4 @@
-var cart = [];
+var cart = {};
 var item
 var cartobject={}
 var price
