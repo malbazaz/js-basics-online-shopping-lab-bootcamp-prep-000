@@ -24,7 +24,7 @@ return `${item} has been added to your cart.`
 function viewCart() {
  var i
  for(i=0; i<cart.length; i++){
-   
+   return `In your cart, you have ${item[i]} at ${
  }
  
 }
