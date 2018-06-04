@@ -1,7 +1,7 @@
 var cart = [];
 var item
 var cartobject={}
-
+var price
 
 function getCart() {
  return cart;
@@ -14,7 +14,7 @@ function setCart(c) {
 
 function addToCart(item) {
 
-var price=math.floor(math.random()*1000)
+price=math.floor(math.random()*1000)
 var cartobject= {itemName:item, itemPrice:price}
 cart.assign({},cartobject)
 return `${item} has been added to your cart.`
@@ -24,7 +24,7 @@ return `${item} has been added to your cart.`
 function viewCart() {
  var i
  for(i=0; i<cart.length; i++){
-   return `In your cart, you have ${item[i]} at`
+   return `In your cart, you have ${item[i]} at ${price}`
  }
  
 }
