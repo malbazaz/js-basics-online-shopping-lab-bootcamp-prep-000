@@ -23,12 +23,16 @@ return `${item} has been added to your cart.`
 
 function viewCart() {
  var i
+ if (!cart.length){
+   return "Your shopping cart is empty"
+ }
+ else{
  for(i=0; i<cart.length; i++){
    return `In your cart, you have ${item[i]} at ${price}`
  }
  
 }
-
+}
 function total() {
   // write your code here
 }
